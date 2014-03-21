@@ -10,4 +10,14 @@ describe PrimeChecker do
 
     expect(actual).to eq expected
   end
+
+  it "tells you a number is not prime" do
+    tester = PrimeChecker.new
+
+    expected = false
+
+    actual = tester.prime_number?(6)
+
+    expect(actual).to eq expected
+  end
 end
